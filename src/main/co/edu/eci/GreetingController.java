@@ -1,19 +1,24 @@
-package co.edu.eci.lambda.springrest;
-
-import java.util.concurrent.atomic.AtomicLong;
+package co.edu.eci;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class GreetingController {
+public class CatalanController {
 
-    private static final String template = "Hello, %s!";
-    private final AtomicLong counter = new AtomicLong();
+    @GetMapping("/catalan")
+    public String catalan(@RequestParam(value = "n", defaultValue = "0") int n) {
+        return String.valueOf(catalanNumber(n));
+    }
 
-    @GetMapping("/greeting")
-    public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
-        return new Greeting(counter.incrementAndGet(), String.format(template, name));
+    private long catalanNumber(int n) {
+        long res = 1;
+
+        for (int i = 0; i < n; i++) {
+            res = res * 2 * (2 * i + 1) / (i + 2);
+        }
+
+        return res;
     }
 }

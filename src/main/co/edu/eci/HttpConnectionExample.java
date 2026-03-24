@@ -39,5 +39,5 @@ public class HttpConnectionExample {
             System.out.println("GET request not worked");
         }
         System.out.println("GET DONE");
-    
-}
+
+    }

@@ -122,6 +122,13 @@ We install java and then we verify the instalation
 
 ---
 
+here we have an example of the view in the web introducing the value and then click in submit for getting the output.
+
+![alt text](src/resources/example.png)
+
+---
+
+
 Some Troubles
 
     <?xml version="1.0" encoding="UTF-8"?>
@@ -171,6 +178,8 @@ For some reasone this pom.xml appear to be not being reading, so this cause some
 ![alt text](src/resources/clean.png)
 
 This problem could be because there are missing dependencies or plugins or could be both.
+
+![alt text](src/resources/spring.png)
 
 
 

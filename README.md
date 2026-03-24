@@ -100,6 +100,27 @@ For example, if n = 1 the out put would be 1,1. This because the algorithm calcu
 Note: We already have n = 0 as a base case and as we already saw in the example the output is 1.
 
 
+---
+
+Also we need to prepare de AWS environment for a future implementation.
+
+![alt text](src/resources/parcial.png)
+
+we crerate a new instance for this exam called Parcial.
+
+![alt text](src/resources/SecurityGroup.png)
+
+We edit the secure groups and include the port 8080.
+
+![alt text](src/resources/connection.png)
+
+We stablish connection to the aws server.
+
+![alt text](src/resources/java.png)
+
+We install java and then we verify the instalation
+
+
 
 
 

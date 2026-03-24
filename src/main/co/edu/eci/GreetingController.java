@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class CatalanController {
+public class GreetingController {
 
     @GetMapping("/catalan")
     public String catalan(@RequestParam(value = "n", defaultValue = "0") int n) {
